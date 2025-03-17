@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2835149956293257240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8968396262880938538}
+  - component: {fileID: 686659134265699288}
+  - component: {fileID: 9093691766771951949}
+  m_Layer: 0
+  m_Name: LoadingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8968396262880938538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835149956293257240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 823.8422, y: 1327.6931, z: -42.131916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686659134265699288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835149956293257240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cfbcee62e0d6bd479037ec808ea5a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: WelcomeScene
+  progressBar: {fileID: 0}
+  loadingDuration: 8
+--- !u!114 &9093691766771951949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2835149956293257240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05db745583ab111449326ef34004b19f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facts:
+  - Planting trees helps absorb  CO2, and cool the planet
+  - Switching to renewable energy cuts carbon pollution
+  - Walking, biking or using public transport reduces emissions
+  - Fossil fuels are the biggest cause of climate change.  Less use, less warming!
+  - Using reusable bags and bottles reduces plastic waste.
+  - Wasting less food can help fight climate change.
+  - Protecting oceans helps store carbon and sustain life.
+  - Energy-efficient homes save money and the planet.
+  - Supporting climate-friendly policies leads to real change.
+  - Small actions add up every eco-friendlychoice makes a difference!
+  factText: {fileID: 0}

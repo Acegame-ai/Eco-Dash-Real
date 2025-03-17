@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3102787363609767591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434414775546615123}
+  - component: {fileID: 2620128896379298211}
+  - component: {fileID: 3878382981717622433}
+  - component: {fileID: 4081508828993462697}
+  - component: {fileID: 1761403286664634541}
+  - component: {fileID: 7823730739644880501}
+  - component: {fileID: 8405492314436404232}
+  - component: {fileID: 4317547306684423824}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1434414775546615123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2620128896379298211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8567498f1d55e54d9f819fb676ece38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  coinText: {fileID: 0}
+  initialScoreIncreaseInterval: 0.05
+  scoreIncreaseRate: 1
+--- !u!114 &3878382981717622433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58f0854e8a21b44c987b86b6970728a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 78704178902794776, guid: 0eef5a406d3a47543b6fd39cb23b7b2a, type: 3}
+  - {fileID: 7918877619882793065, guid: 616462bd56e96614a9101ecbad87a5bc, type: 3}
+  - {fileID: 1430488672488146636, guid: 93027cb420183b949afc8446bdb585d2, type: 3}
+  laneSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  spawnDistance: 150
+  spawnInterval: 3
+  obstaclePatterns:
+  - lanes: 010000
+  - lanes: 000100
+  - lanes: 000001
+  - lanes: 010001
+  - lanes: 010100
+  - lanes: 000101
+--- !u!114 &4081508828993462697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41014f859203b744e80a387e965b1213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins:
+  - {fileID: 2392936311803095644, guid: 7160d0a25916f25428d5b6dc41557138, type: 3}
+  - {fileID: 2468538149723018243, guid: 4f543b11e8df79d489c1cc5fb5cc17c0, type: 3}
+  laneSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  spawnDistance: 100
+  spawnInterval: 0.15
+  obstacleCoinProbability: 0.75
+  floatHeight: 0.8
+--- !u!114 &1761403286664634541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf47bf320ef5664795d8844a62d0824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  pauseButton: {fileID: 0}
+  resumeButton: {fileID: 0}
+  quitButton: {fileID: 0}
+--- !u!114 &7823730739644880501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18af49a7aeddde24a8a9cb12d2019be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  environmentPrefab: {fileID: 0}
+  player: {fileID: 0}
+  numberOfPrefabs: 3
+  spawnDistance: 2350
+--- !u!114 &8405492314436404232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47eda5f8746e4794cb50a22d04eb92ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  laneSpawnPoints: []
+  player: {fileID: 0}
+--- !u!114 &4317547306684423824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102787363609767591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1620def603fd5d443b63e4f6aaf84d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climateFacts: {fileID: 11400000, guid: 71e43c66f575c40459dd360b42c75a76, type: 2}
+  factText: {fileID: 0}
